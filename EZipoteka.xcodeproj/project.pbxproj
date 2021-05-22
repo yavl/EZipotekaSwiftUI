@@ -3,16 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5166BEA265931FE006A36B1 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5166BE9265931FE006A36B1 /* Credit.swift */; };
+		F5166BF0265958BD006A36B1 /* SwipeCell in Frameworks */ = {isa = PBXBuildFile; productRef = F5166BEF265958BD006A36B1 /* SwipeCell */; };
+		F5166BF3265967A7006A36B1 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5166BF2265967A7006A36B1 /* CreditView.swift */; };
+		F5166BF6265969A9006A36B1 /* FDFullscreenPopGesture in Frameworks */ = {isa = PBXBuildFile; productRef = F5166BF5265969A9006A36B1 /* FDFullscreenPopGesture */; };
+		F5166BF8265970C8006A36B1 /* CreditRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5166BF7265970C8006A36B1 /* CreditRow.swift */; };
 		F558D6FF2659130600BF4111 /* EZipotekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D6FE2659130600BF4111 /* EZipotekaApp.swift */; };
 		F558D7012659130600BF4111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D7002659130600BF4111 /* ContentView.swift */; };
 		F558D7032659130800BF4111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558D7022659130800BF4111 /* Assets.xcassets */; };
 		F558D7062659130800BF4111 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558D7052659130800BF4111 /* Preview Assets.xcassets */; };
 		F558D7112659130800BF4111 /* EZipotekaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D7102659130800BF4111 /* EZipotekaTests.swift */; };
 		F558D71C2659130800BF4111 /* EZipotekaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D71B2659130800BF4111 /* EZipotekaUITests.swift */; };
+		F558D72B26591BC900BF4111 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F558D72A26591BC900BF4111 /* FirebaseAnalytics */; };
+		F558D72D26591BC900BF4111 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F558D72C26591BC900BF4111 /* FirebaseCrashlytics */; };
+		F558D73026591C5A00BF4111 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D72F26591C5A00BF4111 /* Metrics.swift */; };
+		F558D73326591DDF00BF4111 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F558D73226591DDF00BF4111 /* GoogleService-Info.plist */; };
+		F558D736265923CA00BF4111 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D735265923CA00BF4111 /* ListView.swift */; };
+		F558D738265923D400BF4111 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D737265923D400BF4111 /* AddView.swift */; };
+		F558D73A265923DF00BF4111 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D739265923DF00BF4111 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5166BE9265931FE006A36B1 /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
+		F5166BF2265967A7006A36B1 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
+		F5166BF7265970C8006A36B1 /* CreditRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditRow.swift; sourceTree = "<group>"; };
 		F558D6FB2659130600BF4111 /* EZipoteka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZipoteka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F558D6FE2659130600BF4111 /* EZipotekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZipotekaApp.swift; sourceTree = "<group>"; };
 		F558D7002659130600BF4111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +60,11 @@
 		F558D7172659130800BF4111 /* EZipotekaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZipotekaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F558D71B2659130800BF4111 /* EZipotekaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZipotekaUITests.swift; sourceTree = "<group>"; };
 		F558D71D2659130800BF4111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F558D72F26591C5A00BF4111 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		F558D73226591DDF00BF4111 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F558D735265923CA00BF4111 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		F558D737265923D400BF4111 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		F558D739265923DF00BF4111 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F558D72B26591BC900BF4111 /* FirebaseAnalytics in Frameworks */,
+				F5166BF6265969A9006A36B1 /* FDFullscreenPopGesture in Frameworks */,
+				F558D72D26591BC900BF4111 /* FirebaseCrashlytics in Frameworks */,
+				F5166BF0265958BD006A36B1 /* SwipeCell in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +96,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5166BE8265931DE006A36B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5166BE9265931FE006A36B1 /* Credit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5166BF126596783006A36B1 /* TabBarItems */ = {
+			isa = PBXGroup;
+			children = (
+				F558D735265923CA00BF4111 /* ListView.swift */,
+				F558D737265923D400BF4111 /* AddView.swift */,
+				F558D739265923DF00BF4111 /* SettingsView.swift */,
+			);
+			path = TabBarItems;
+			sourceTree = "<group>";
+		};
 		F558D6F22659130600BF4111 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +137,10 @@
 		F558D6FD2659130600BF4111 /* EZipoteka */ = {
 			isa = PBXGroup;
 			children = (
+				F5166BE8265931DE006A36B1 /* Models */,
+				F558D734265923A400BF4111 /* Views */,
+				F558D73226591DDF00BF4111 /* GoogleService-Info.plist */,
+				F558D72E26591C1E00BF4111 /* Metrics */,
 				F558D6FE2659130600BF4111 /* EZipotekaApp.swift */,
 				F558D7002659130600BF4111 /* ContentView.swift */,
 				F558D7022659130800BF4111 /* Assets.xcassets */,
@@ -130,6 +176,24 @@
 			path = EZipotekaUITests;
 			sourceTree = "<group>";
 		};
+		F558D72E26591C1E00BF4111 /* Metrics */ = {
+			isa = PBXGroup;
+			children = (
+				F558D72F26591C5A00BF4111 /* Metrics.swift */,
+			);
+			path = Metrics;
+			sourceTree = "<group>";
+		};
+		F558D734265923A400BF4111 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5166BF126596783006A36B1 /* TabBarItems */,
+				F5166BF2265967A7006A36B1 /* CreditView.swift */,
+				F5166BF7265970C8006A36B1 /* CreditRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,12 +204,19 @@
 				F558D6F72659130600BF4111 /* Sources */,
 				F558D6F82659130600BF4111 /* Frameworks */,
 				F558D6F92659130600BF4111 /* Resources */,
+				F558D73126591D7D00BF4111 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = EZipoteka;
+			packageProductDependencies = (
+				F558D72A26591BC900BF4111 /* FirebaseAnalytics */,
+				F558D72C26591BC900BF4111 /* FirebaseCrashlytics */,
+				F5166BEF265958BD006A36B1 /* SwipeCell */,
+				F5166BF5265969A9006A36B1 /* FDFullscreenPopGesture */,
+			);
 			productName = EZipoteka;
 			productReference = F558D6FB2659130600BF4111 /* EZipoteka.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +288,11 @@
 				Base,
 			);
 			mainGroup = F558D6F22659130600BF4111;
+			packageReferences = (
+				F558D72926591BC900BF4111 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F5166BEE265958BD006A36B1 /* XCRemoteSwiftPackageReference "SwipeCell" */,
+				F5166BF4265969A9006A36B1 /* XCRemoteSwiftPackageReference "FDFullscreenPopGesture" */,
+			);
 			productRefGroup = F558D6FC2659130600BF4111 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +311,7 @@
 			files = (
 				F558D7062659130800BF4111 /* Preview Assets.xcassets in Resources */,
 				F558D7032659130800BF4111 /* Assets.xcassets in Resources */,
+				F558D73326591DDF00BF4111 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +331,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F558D73126591D7D00BF4111 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${BUILD_DIR%Build/*}SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F558D6F72659130600BF4111 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F558D736265923CA00BF4111 /* ListView.swift in Sources */,
+				F5166BF3265967A7006A36B1 /* CreditView.swift in Sources */,
 				F558D7012659130600BF4111 /* ContentView.swift in Sources */,
+				F558D738265923D400BF4111 /* AddView.swift in Sources */,
+				F558D73A265923DF00BF4111 /* SettingsView.swift in Sources */,
+				F5166BEA265931FE006A36B1 /* Credit.swift in Sources */,
 				F558D6FF2659130600BF4111 /* EZipotekaApp.swift in Sources */,
+				F5166BF8265970C8006A36B1 /* CreditRow.swift in Sources */,
+				F558D73026591C5A00BF4111 /* Metrics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"EZipoteka/Preview Content\"";
 				DEVELOPMENT_TEAM = 334NJD4K94;
 				ENABLE_PREVIEWS = YES;
@@ -427,6 +532,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0.debug;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yavl.EZipoteka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -449,6 +555,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0.debug;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yavl.EZipoteka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -580,6 +687,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5166BEE265958BD006A36B1 /* XCRemoteSwiftPackageReference "SwipeCell" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fatbobman/SwipeCell";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+		F5166BF4265969A9006A36B1 /* XCRemoteSwiftPackageReference "FDFullscreenPopGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yavl/FDFullscreenPopGesture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		F558D72926591BC900BF4111 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5166BEF265958BD006A36B1 /* SwipeCell */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5166BEE265958BD006A36B1 /* XCRemoteSwiftPackageReference "SwipeCell" */;
+			productName = SwipeCell;
+		};
+		F5166BF5265969A9006A36B1 /* FDFullscreenPopGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5166BF4265969A9006A36B1 /* XCRemoteSwiftPackageReference "FDFullscreenPopGesture" */;
+			productName = FDFullscreenPopGesture;
+		};
+		F558D72A26591BC900BF4111 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F558D72926591BC900BF4111 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F558D72C26591BC900BF4111 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F558D72926591BC900BF4111 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F558D6F32659130600BF4111 /* Project object */;
 }

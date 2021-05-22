@@ -6,16 +6,34 @@
 //
 
 import SwiftUI
+import AppTrackingTransparency
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView() {
+            ListView()
+                .tabItem {
+                    Image(systemName: "rectangle.grid.1x2")
+                    Text("Список")
+                }
+            AddView()
+                .tabItem {
+                    Image(systemName: "plus.circle")
+                    Text("Добавить")
+                }
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gearshape")
+                    Text("Настройки")
+                }
+        }.accentColor(.green)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
