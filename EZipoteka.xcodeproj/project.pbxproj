@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F558D6FF2659130600BF4111 /* EZipotekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D6FE2659130600BF4111 /* EZipotekaApp.swift */; };
+		F558D7012659130600BF4111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D7002659130600BF4111 /* ContentView.swift */; };
+		F558D7032659130800BF4111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558D7022659130800BF4111 /* Assets.xcassets */; };
+		F558D7062659130800BF4111 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558D7052659130800BF4111 /* Preview Assets.xcassets */; };
+		F558D7112659130800BF4111 /* EZipotekaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D7102659130800BF4111 /* EZipotekaTests.swift */; };
+		F558D71C2659130800BF4111 /* EZipotekaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D71B2659130800BF4111 /* EZipotekaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F558D70D2659130800BF4111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F558D6F32659130600BF4111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F558D6FA2659130600BF4111;
+			remoteInfo = EZipoteka;
+		};
+		F558D7182659130800BF4111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F558D6F32659130600BF4111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F558D6FA2659130600BF4111;
+			remoteInfo = EZipoteka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F558D6FB2659130600BF4111 /* EZipoteka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZipoteka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F558D6FE2659130600BF4111 /* EZipotekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZipotekaApp.swift; sourceTree = "<group>"; };
+		F558D7002659130600BF4111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F558D7022659130800BF4111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F558D7052659130800BF4111 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F558D7072659130800BF4111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F558D70C2659130800BF4111 /* EZipotekaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZipotekaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F558D7102659130800BF4111 /* EZipotekaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZipotekaTests.swift; sourceTree = "<group>"; };
+		F558D7122659130800BF4111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F558D7172659130800BF4111 /* EZipotekaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZipotekaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F558D71B2659130800BF4111 /* EZipotekaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZipotekaUITests.swift; sourceTree = "<group>"; };
+		F558D71D2659130800BF4111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F558D6F82659130600BF4111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F558D7092659130800BF4111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F558D7142659130800BF4111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F558D6F22659130600BF4111 = {
+			isa = PBXGroup;
+			children = (
+				F558D6FD2659130600BF4111 /* EZipoteka */,
+				F558D70F2659130800BF4111 /* EZipotekaTests */,
+				F558D71A2659130800BF4111 /* EZipotekaUITests */,
+				F558D6FC2659130600BF4111 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F558D6FC2659130600BF4111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F558D6FB2659130600BF4111 /* EZipoteka.app */,
+				F558D70C2659130800BF4111 /* EZipotekaTests.xctest */,
+				F558D7172659130800BF4111 /* EZipotekaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F558D6FD2659130600BF4111 /* EZipoteka */ = {
+			isa = PBXGroup;
+			children = (
+				F558D6FE2659130600BF4111 /* EZipotekaApp.swift */,
+				F558D7002659130600BF4111 /* ContentView.swift */,
+				F558D7022659130800BF4111 /* Assets.xcassets */,
+				F558D7072659130800BF4111 /* Info.plist */,
+				F558D7042659130800BF4111 /* Preview Content */,
+			);
+			path = EZipoteka;
+			sourceTree = "<group>";
+		};
+		F558D7042659130800BF4111 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F558D7052659130800BF4111 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F558D70F2659130800BF4111 /* EZipotekaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F558D7102659130800BF4111 /* EZipotekaTests.swift */,
+				F558D7122659130800BF4111 /* Info.plist */,
+			);
+			path = EZipotekaTests;
+			sourceTree = "<group>";
+		};
+		F558D71A2659130800BF4111 /* EZipotekaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F558D71B2659130800BF4111 /* EZipotekaUITests.swift */,
+				F558D71D2659130800BF4111 /* Info.plist */,
+			);
+			path = EZipotekaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F558D6FA2659130600BF4111 /* EZipoteka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F558D7202659130800BF4111 /* Build configuration list for PBXNativeTarget "EZipoteka" */;
+			buildPhases = (
+				F558D6F72659130600BF4111 /* Sources */,
+				F558D6F82659130600BF4111 /* Frameworks */,
+				F558D6F92659130600BF4111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EZipoteka;
+			productName = EZipoteka;
+			productReference = F558D6FB2659130600BF4111 /* EZipoteka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F558D70B2659130800BF4111 /* EZipotekaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F558D7232659130800BF4111 /* Build configuration list for PBXNativeTarget "EZipotekaTests" */;
+			buildPhases = (
+				F558D7082659130800BF4111 /* Sources */,
+				F558D7092659130800BF4111 /* Frameworks */,
+				F558D70A2659130800BF4111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F558D70E2659130800BF4111 /* PBXTargetDependency */,
+			);
+			name = EZipotekaTests;
+			productName = EZipotekaTests;
+			productReference = F558D70C2659130800BF4111 /* EZipotekaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F558D7162659130800BF4111 /* EZipotekaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F558D7262659130800BF4111 /* Build configuration list for PBXNativeTarget "EZipotekaUITests" */;
+			buildPhases = (
+				F558D7132659130800BF4111 /* Sources */,
+				F558D7142659130800BF4111 /* Frameworks */,
+				F558D7152659130800BF4111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F558D7192659130800BF4111 /* PBXTargetDependency */,
+			);
+			name = EZipotekaUITests;
+			productName = EZipotekaUITests;
+			productReference = F558D7172659130800BF4111 /* EZipotekaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F558D6F32659130600BF4111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F558D6FA2659130600BF4111 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F558D70B2659130800BF4111 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F558D6FA2659130600BF4111;
+					};
+					F558D7162659130800BF4111 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F558D6FA2659130600BF4111;
+					};
+				};
+			};
+			buildConfigurationList = F558D6F62659130600BF4111 /* Build configuration list for PBXProject "EZipoteka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F558D6F22659130600BF4111;
+			productRefGroup = F558D6FC2659130600BF4111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F558D6FA2659130600BF4111 /* EZipoteka */,
+				F558D70B2659130800BF4111 /* EZipotekaTests */,
+				F558D7162659130800BF4111 /* EZipotekaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F558D6F92659130600BF4111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F558D7062659130800BF4111 /* Preview Assets.xcassets in Resources */,
+				F558D7032659130800BF4111 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F558D70A2659130800BF4111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F558D7152659130800BF4111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F558D6F72659130600BF4111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F558D7012659130600BF4111 /* ContentView.swift in Sources */,
+				F558D6FF2659130600BF4111 /* EZipotekaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F558D7082659130800BF4111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F558D7112659130800BF4111 /* EZipotekaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F558D7132659130800BF4111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F558D71C2659130800BF4111 /* EZipotekaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F558D70E2659130800BF4111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F558D6FA2659130600BF4111 /* EZipoteka */;
+			targetProxy = F558D70D2659130800BF4111 /* PBXContainerItemProxy */;
+		};
+		F558D7192659130800BF4111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F558D6FA2659130600BF4111 /* EZipoteka */;
+			targetProxy = F558D7182659130800BF4111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F558D71E2659130800BF4111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F558D71F2659130800BF4111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F558D7212659130800BF4111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EZipoteka/Preview Content\"";
+				DEVELOPMENT_TEAM = 334NJD4K94;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EZipoteka/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavl.EZipoteka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F558D7222659130800BF4111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EZipoteka/Preview Content\"";
+				DEVELOPMENT_TEAM = 334NJD4K94;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EZipoteka/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavl.EZipoteka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F558D7242659130800BF4111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 334NJD4K94;
+				INFOPLIST_FILE = EZipotekaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavl.EZipotekaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EZipoteka.app/EZipoteka";
+			};
+			name = Debug;
+		};
+		F558D7252659130800BF4111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 334NJD4K94;
+				INFOPLIST_FILE = EZipotekaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavl.EZipotekaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EZipoteka.app/EZipoteka";
+			};
+			name = Release;
+		};
+		F558D7272659130800BF4111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 334NJD4K94;
+				INFOPLIST_FILE = EZipotekaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavl.EZipotekaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EZipoteka;
+			};
+			name = Debug;
+		};
+		F558D7282659130800BF4111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 334NJD4K94;
+				INFOPLIST_FILE = EZipotekaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavl.EZipotekaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EZipoteka;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F558D6F62659130600BF4111 /* Build configuration list for PBXProject "EZipoteka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F558D71E2659130800BF4111 /* Debug */,
+				F558D71F2659130800BF4111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F558D7202659130800BF4111 /* Build configuration list for PBXNativeTarget "EZipoteka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F558D7212659130800BF4111 /* Debug */,
+				F558D7222659130800BF4111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F558D7232659130800BF4111 /* Build configuration list for PBXNativeTarget "EZipotekaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F558D7242659130800BF4111 /* Debug */,
+				F558D7252659130800BF4111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F558D7262659130800BF4111 /* Build configuration list for PBXNativeTarget "EZipotekaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F558D7272659130800BF4111 /* Debug */,
+				F558D7282659130800BF4111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F558D6F32659130600BF4111 /* Project object */;
+}
