@@ -20,7 +20,7 @@ struct ListView: View {
             List(credits) { credit in
                 CreditRow(credit: credit)
             }
-            .navigationTitle("Список кредитов")
+            .navigationTitle("tab.list.title")
         }
     }
     

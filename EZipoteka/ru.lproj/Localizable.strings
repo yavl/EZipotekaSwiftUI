@@ -1,0 +1,11 @@
+tab.list = "Список";
+tab.list.title = "Список кредитов";
+
+tab.add = "Добавить";
+tab.add.title = "Добавить кредит";
+
+tab.settings = "Настройки";
+tab.settings.title = "Настройки";
+
+addView.credit.sum = "Сумма кредита";
+addView.credit.interest = "Процентная ставка";

@@ -12,6 +12,7 @@
 		F5166BF3265967A7006A36B1 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5166BF2265967A7006A36B1 /* CreditView.swift */; };
 		F5166BF6265969A9006A36B1 /* FDFullscreenPopGesture in Frameworks */ = {isa = PBXBuildFile; productRef = F5166BF5265969A9006A36B1 /* FDFullscreenPopGesture */; };
 		F5166BF8265970C8006A36B1 /* CreditRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5166BF7265970C8006A36B1 /* CreditRow.swift */; };
+		F53CFAB6265F97E900C5629E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53CFAB8265F97E900C5629E /* Localizable.strings */; };
 		F558D6FF2659130600BF4111 /* EZipotekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D6FE2659130600BF4111 /* EZipotekaApp.swift */; };
 		F558D7012659130600BF4111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D7002659130600BF4111 /* ContentView.swift */; };
 		F558D7032659130800BF4111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558D7022659130800BF4111 /* Assets.xcassets */; };
@@ -48,6 +49,8 @@
 		F5166BE9265931FE006A36B1 /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
 		F5166BF2265967A7006A36B1 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
 		F5166BF7265970C8006A36B1 /* CreditRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditRow.swift; sourceTree = "<group>"; };
+		F53CFAB7265F97E900C5629E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F53CFAB9265F97EF00C5629E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F558D6FB2659130600BF4111 /* EZipoteka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZipoteka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F558D6FE2659130600BF4111 /* EZipotekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZipotekaApp.swift; sourceTree = "<group>"; };
 		F558D7002659130600BF4111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 				F558D7022659130800BF4111 /* Assets.xcassets */,
 				F558D7072659130800BF4111 /* Info.plist */,
 				F558D7042659130800BF4111 /* Preview Content */,
+				F53CFAB8265F97E900C5629E /* Localizable.strings */,
 			);
 			path = EZipoteka;
 			sourceTree = "<group>";
@@ -286,6 +290,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F558D6F22659130600BF4111;
 			packageReferences = (
@@ -310,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F558D7062659130800BF4111 /* Preview Assets.xcassets in Resources */,
+				F53CFAB6265F97E900C5629E /* Localizable.strings in Resources */,
 				F558D7032659130800BF4111 /* Assets.xcassets in Resources */,
 				F558D73326591DDF00BF4111 /* GoogleService-Info.plist in Resources */,
 			);
@@ -398,6 +404,18 @@
 			targetProxy = F558D7182659130800BF4111 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F53CFAB8265F97E900C5629E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53CFAB7265F97E900C5629E /* en */,
+				F53CFAB9265F97EF00C5629E /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F558D71E2659130800BF4111 /* Debug */ = {
