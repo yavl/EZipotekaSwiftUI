@@ -9,7 +9,7 @@ import Foundation
 
 struct Credit: Identifiable {
     var id = UUID()
-    var sum: Int?
-    var interest: Float?
+    var sum: Int
+    var interest: Float
     var name = ""
 }

@@ -9,19 +9,38 @@ import SwiftUI
 import SwipeCell
 
 struct CreditRow: View {
+    let formatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+        formatter.roundingMode = .halfUp
+        return formatter
+    }()
+    
     var credit: Credit
     
     var body: some View {
-        let favoriteButton = SwipeCellButton(buttonStyle: .titleAndImage, title: "Сохранить", systemImage: "bookmark", view: nil, backgroundColor: .yellow, action: onSave)
-        let removeButton = SwipeCellButton(buttonStyle: .titleAndImage, title: "Удалить", systemImage: "trash", titleColor: .white, imageColor: .white, view: nil, backgroundColor: .red, action: onRemove, feedback:true )
-        
-        let leftSlot = SwipeCellSlot(slots: [favoriteButton], slotStyle: .normal, buttonWidth: 100)
-        let rightSlot = SwipeCellSlot(slots: [removeButton], slotStyle: .destructive, buttonWidth: 100)
-        let width = UIScreen.main.bounds.width
+//        let favoriteButton = SwipeCellButton(buttonStyle: .titleAndImage, title: "Сохранить", systemImage: "bookmark", view: nil, backgroundColor: .yellow, action: onSave)
+//        let removeButton = SwipeCellButton(buttonStyle: .titleAndImage, title: "Удалить", systemImage: "trash", titleColor: .white, imageColor: .white, view: nil, backgroundColor: .red, action: onRemove, feedback:true )
+//
+//        let leftSlot = SwipeCellSlot(slots: [favoriteButton], slotStyle: .normal, buttonWidth: 100)
+//        let rightSlot = SwipeCellSlot(slots: [removeButton], slotStyle: .destructive, buttonWidth: 100)
+//        let width = UIScreen.main.bounds.width
+//
+//        NavigationLink(destination: CreditView()) {
+//            Text("\(credit.name)")
+//        }.swipeCell(cellPosition: .both, leftSlot: leftSlot, rightSlot: rightSlot).frame(width: width, height: 90)
         
         NavigationLink(destination: CreditView()) {
-            Text("\(credit.name)")
-        }.swipeCell(cellPosition: .both, leftSlot: leftSlot, rightSlot: rightSlot).frame(width: width, height: 90)
+            HStack {
+                Text("\(formatter.string(from: NSNumber(value: credit.interest))!)")
+                
+                VStack(alignment: .leading) {
+                    Text("\(credit.name)")
+                    Text("20 лет")
+                }
+            }
+        }
     }
     
     private func onSave() {
