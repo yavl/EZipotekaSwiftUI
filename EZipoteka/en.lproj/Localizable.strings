@@ -1,6 +1,5 @@
 tab.list = "List";
 tab.list.title = "List of credits";
-tab.list.row = "List of credits";
 
 tab.add = "Add";
 tab.add.title = "Add credit";
@@ -8,5 +7,10 @@ tab.add.title = "Add credit";
 tab.settings = "Settings";
 tab.settings.title = "Settings";
 
+addView.credit.name = "Name";
+addView.credit.bank = "Bank";
 addView.credit.sum = "Credit sum";
 addView.credit.interest = "Interest rate";
+addView.next = "Next";
+
+trashView.title = "Trash";

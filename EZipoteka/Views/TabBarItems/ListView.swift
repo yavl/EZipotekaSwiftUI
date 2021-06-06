@@ -6,23 +6,33 @@
 //
 
 import SwiftUI
-import SwipeCell
 
 struct ListView: View {
     
     var body: some View {
         
         let credits = [
-            Credit(sum: 2800000, interest: 5.85, name: "ЖК Чистое небо - Студия"),
-            Credit(sum: 2800000, interest: 5.85, name: "ЖК Солнечный город - Студия")
+            Credit(name: "ЖК Чистое небо - Студия", bank: "Банк Санкт-Петербург", sum: 2800000, interest: 5.85),
+            Credit(name: "ЖК Солнечный город - Студия", bank: "СберБанк", sum: 12800000, interest: 5.85)
         ]
 
         NavigationView {
-            List(credits) { credit in
-                CreditRow(credit: credit)
+            List {
+                ForEach(credits, id: \.self) {
+                    CreditRow(credit: $0)
+                }
+                .onDelete(perform: { indexSet in
+                    print("delete")
+                })
             }
             .navigationTitle("tab.list.title")
+            .toolbar {
+                NavigationLink(destination: TrashView()) {
+                    Image(systemName: "trash")
+                }
+            }
         }
+        .navigationViewStyle(StackNavigationViewStyle()) // a workaround for swipe back cancel issue
     }
     
     private func onSave() {

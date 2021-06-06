@@ -18,7 +18,7 @@ struct SettingsView: View {
                 Text("asik")
                 Text("asik")
             }
-            .navigationTitle("Настройки")
+            .navigationTitle("tab.settings.title")
         }
     }
 }

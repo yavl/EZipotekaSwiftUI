@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Credit: Identifiable {
+struct Credit: Identifiable, Hashable {
     var id = UUID()
+    var name = ""
+    var bank = ""
     var sum: Int
     var interest: Float
-    var name = ""
 }

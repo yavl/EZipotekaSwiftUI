@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F5166BEA265931FE006A36B1 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5166BE9265931FE006A36B1 /* Credit.swift */; };
-		F5166BF0265958BD006A36B1 /* SwipeCell in Frameworks */ = {isa = PBXBuildFile; productRef = F5166BEF265958BD006A36B1 /* SwipeCell */; };
 		F5166BF3265967A7006A36B1 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5166BF2265967A7006A36B1 /* CreditView.swift */; };
-		F5166BF6265969A9006A36B1 /* FDFullscreenPopGesture in Frameworks */ = {isa = PBXBuildFile; productRef = F5166BF5265969A9006A36B1 /* FDFullscreenPopGesture */; };
 		F5166BF8265970C8006A36B1 /* CreditRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5166BF7265970C8006A36B1 /* CreditRow.swift */; };
 		F53CFAB6265F97E900C5629E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53CFAB8265F97E900C5629E /* Localizable.strings */; };
+		F54A5AEA266CF131005FBABD /* FDFullscreenPopGesture in Frameworks */ = {isa = PBXBuildFile; productRef = F54A5AE9266CF131005FBABD /* FDFullscreenPopGesture */; };
+		F54A5AEC266D10EC005FBABD /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A5AEB266D10EC005FBABD /* Globals.swift */; };
+		F54A5AEE266D14BF005FBABD /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A5AED266D14BF005FBABD /* TrashView.swift */; };
 		F558D6FF2659130600BF4111 /* EZipotekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D6FE2659130600BF4111 /* EZipotekaApp.swift */; };
 		F558D7012659130600BF4111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D7002659130600BF4111 /* ContentView.swift */; };
 		F558D7032659130800BF4111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558D7022659130800BF4111 /* Assets.xcassets */; };
@@ -51,6 +52,8 @@
 		F5166BF7265970C8006A36B1 /* CreditRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditRow.swift; sourceTree = "<group>"; };
 		F53CFAB7265F97E900C5629E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53CFAB9265F97EF00C5629E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F54A5AEB266D10EC005FBABD /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		F54A5AED266D14BF005FBABD /* TrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashView.swift; sourceTree = "<group>"; };
 		F558D6FB2659130600BF4111 /* EZipoteka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZipoteka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F558D6FE2659130600BF4111 /* EZipotekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZipotekaApp.swift; sourceTree = "<group>"; };
 		F558D7002659130600BF4111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,9 +79,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F558D72B26591BC900BF4111 /* FirebaseAnalytics in Frameworks */,
-				F5166BF6265969A9006A36B1 /* FDFullscreenPopGesture in Frameworks */,
+				F54A5AEA266CF131005FBABD /* FDFullscreenPopGesture in Frameworks */,
 				F558D72D26591BC900BF4111 /* FirebaseCrashlytics in Frameworks */,
-				F5166BF0265958BD006A36B1 /* SwipeCell in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +119,13 @@
 			path = TabBarItems;
 			sourceTree = "<group>";
 		};
+		F54A5AE8266CF131005FBABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F558D6F22659130600BF4111 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +133,7 @@
 				F558D70F2659130800BF4111 /* EZipotekaTests */,
 				F558D71A2659130800BF4111 /* EZipotekaUITests */,
 				F558D6FC2659130600BF4111 /* Products */,
+				F54A5AE8266CF131005FBABD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +160,7 @@
 				F558D7072659130800BF4111 /* Info.plist */,
 				F558D7042659130800BF4111 /* Preview Content */,
 				F53CFAB8265F97E900C5629E /* Localizable.strings */,
+				F54A5AEB266D10EC005FBABD /* Globals.swift */,
 			);
 			path = EZipoteka;
 			sourceTree = "<group>";
@@ -194,6 +205,7 @@
 				F5166BF126596783006A36B1 /* TabBarItems */,
 				F5166BF2265967A7006A36B1 /* CreditView.swift */,
 				F5166BF7265970C8006A36B1 /* CreditRow.swift */,
+				F54A5AED266D14BF005FBABD /* TrashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,8 +230,7 @@
 			packageProductDependencies = (
 				F558D72A26591BC900BF4111 /* FirebaseAnalytics */,
 				F558D72C26591BC900BF4111 /* FirebaseCrashlytics */,
-				F5166BEF265958BD006A36B1 /* SwipeCell */,
-				F5166BF5265969A9006A36B1 /* FDFullscreenPopGesture */,
+				F54A5AE9266CF131005FBABD /* FDFullscreenPopGesture */,
 			);
 			productName = EZipoteka;
 			productReference = F558D6FB2659130600BF4111 /* EZipoteka.app */;
@@ -295,7 +306,6 @@
 			mainGroup = F558D6F22659130600BF4111;
 			packageReferences = (
 				F558D72926591BC900BF4111 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				F5166BEE265958BD006A36B1 /* XCRemoteSwiftPackageReference "SwipeCell" */,
 				F5166BF4265969A9006A36B1 /* XCRemoteSwiftPackageReference "FDFullscreenPopGesture" */,
 			);
 			productRefGroup = F558D6FC2659130600BF4111 /* Products */;
@@ -367,9 +377,11 @@
 				F558D7012659130600BF4111 /* ContentView.swift in Sources */,
 				F558D738265923D400BF4111 /* AddView.swift in Sources */,
 				F558D73A265923DF00BF4111 /* SettingsView.swift in Sources */,
+				F54A5AEE266D14BF005FBABD /* TrashView.swift in Sources */,
 				F5166BEA265931FE006A36B1 /* Credit.swift in Sources */,
 				F558D6FF2659130600BF4111 /* EZipotekaApp.swift in Sources */,
 				F5166BF8265970C8006A36B1 /* CreditRow.swift in Sources */,
+				F54A5AEC266D10EC005FBABD /* Globals.swift in Sources */,
 				F558D73026591C5A00BF4111 /* Metrics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,14 +719,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F5166BEE265958BD006A36B1 /* XCRemoteSwiftPackageReference "SwipeCell" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/fatbobman/SwipeCell";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.2;
-			};
-		};
 		F5166BF4265969A9006A36B1 /* XCRemoteSwiftPackageReference "FDFullscreenPopGesture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/yavl/FDFullscreenPopGesture";
@@ -734,12 +738,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F5166BEF265958BD006A36B1 /* SwipeCell */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F5166BEE265958BD006A36B1 /* XCRemoteSwiftPackageReference "SwipeCell" */;
-			productName = SwipeCell;
-		};
-		F5166BF5265969A9006A36B1 /* FDFullscreenPopGesture */ = {
+		F54A5AE9266CF131005FBABD /* FDFullscreenPopGesture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F5166BF4265969A9006A36B1 /* XCRemoteSwiftPackageReference "FDFullscreenPopGesture" */;
 			productName = FDFullscreenPopGesture;
