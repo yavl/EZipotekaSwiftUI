@@ -8,21 +8,20 @@
 import SwiftUI
 
 struct ListView: View {
+    @State private var credits = [
+        Credit(name: "ЖК Чистое небо - Студия", bank: "Банк Санкт-Петербург", sum: 2800000, interest: 5.85),
+        Credit(name: "ЖК Солнечный город - Студия", bank: "СберБанк", sum: 12800000, interest: 5.85)
+    ]
     
     var body: some View {
-        
-        let credits = [
-            Credit(name: "ЖК Чистое небо - Студия", bank: "Банк Санкт-Петербург", sum: 2800000, interest: 5.85),
-            Credit(name: "ЖК Солнечный город - Студия", bank: "СберБанк", sum: 12800000, interest: 5.85)
-        ]
 
         NavigationView {
             List {
-                ForEach(credits, id: \.self) {
-                    CreditRow(credit: $0)
+                ForEach(credits, id: \.self) { credit in
+                    CreditRow(credit: credit)
                 }
                 .onDelete(perform: { indexSet in
-                    print("delete")
+                    onRemove(at: indexSet)
                 })
             }
             .navigationTitle("tab.list.title")
@@ -39,7 +38,7 @@ struct ListView: View {
         
     }
     
-    private func onRemove() {
-        print("asd")
+    private func onRemove(at offsets: IndexSet) {
+        credits.remove(atOffsets: offsets)
     }
 }

@@ -7,7 +7,7 @@ tab.add.title = "Add credit";
 tab.settings = "Settings";
 tab.settings.title = "Settings";
 
-addView.credit.name = "Name";
+addView.credit.name = "Credit name";
 addView.credit.bank = "Bank";
 addView.credit.sum = "Credit sum";
 addView.credit.interest = "Interest rate";

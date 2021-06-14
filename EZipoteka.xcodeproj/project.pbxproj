@@ -14,6 +14,7 @@
 		F54A5AEA266CF131005FBABD /* FDFullscreenPopGesture in Frameworks */ = {isa = PBXBuildFile; productRef = F54A5AE9266CF131005FBABD /* FDFullscreenPopGesture */; };
 		F54A5AEC266D10EC005FBABD /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A5AEB266D10EC005FBABD /* Globals.swift */; };
 		F54A5AEE266D14BF005FBABD /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A5AED266D14BF005FBABD /* TrashView.swift */; };
+		F54A5AF426778972005FBABD /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = F54A5AF326778972005FBABD /* Introspect */; };
 		F558D6FF2659130600BF4111 /* EZipotekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D6FE2659130600BF4111 /* EZipotekaApp.swift */; };
 		F558D7012659130600BF4111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D7002659130600BF4111 /* ContentView.swift */; };
 		F558D7032659130800BF4111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558D7022659130800BF4111 /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F558D72B26591BC900BF4111 /* FirebaseAnalytics in Frameworks */,
+				F54A5AF426778972005FBABD /* Introspect in Frameworks */,
 				F54A5AEA266CF131005FBABD /* FDFullscreenPopGesture in Frameworks */,
 				F558D72D26591BC900BF4111 /* FirebaseCrashlytics in Frameworks */,
 			);
@@ -231,6 +233,7 @@
 				F558D72A26591BC900BF4111 /* FirebaseAnalytics */,
 				F558D72C26591BC900BF4111 /* FirebaseCrashlytics */,
 				F54A5AE9266CF131005FBABD /* FDFullscreenPopGesture */,
+				F54A5AF326778972005FBABD /* Introspect */,
 			);
 			productName = EZipoteka;
 			productReference = F558D6FB2659130600BF4111 /* EZipoteka.app */;
@@ -307,6 +310,7 @@
 			packageReferences = (
 				F558D72926591BC900BF4111 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				F5166BF4265969A9006A36B1 /* XCRemoteSwiftPackageReference "FDFullscreenPopGesture" */,
+				F54A5AF226778972005FBABD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = F558D6FC2659130600BF4111 /* Products */;
 			projectDirPath = "";
@@ -727,6 +731,14 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		F54A5AF226778972005FBABD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
 		F558D72926591BC900BF4111 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -742,6 +754,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F5166BF4265969A9006A36B1 /* XCRemoteSwiftPackageReference "FDFullscreenPopGesture" */;
 			productName = FDFullscreenPopGesture;
+		};
+		F54A5AF326778972005FBABD /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F54A5AF226778972005FBABD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
 		};
 		F558D72A26591BC900BF4111 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
