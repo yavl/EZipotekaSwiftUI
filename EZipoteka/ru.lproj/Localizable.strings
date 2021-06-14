@@ -1,16 +1,24 @@
 tab.list = "Список";
-tab.list.title = "Список кредитов";
-
 tab.add = "Добавить";
-tab.add.title = "Добавить кредит";
-
 tab.settings = "Настройки";
-tab.settings.title = "Настройки";
 
+listView.title = "Список кредитов";
+listView.remove = "Удалить";
+
+addView.title = "Добавить кредит";
 addView.credit.name = "Название кредита";
 addView.credit.bank = "Банк";
 addView.credit.sum = "Сумма кредита";
 addView.credit.interest = "Процентная ставка";
 addView.next = "Далее";
 
+settingsView.title = "Настройки";
+
 trashView.title = "Корзина";
+
+infoView.title = "Что к чему";
+infoView.description = "На этом экране можно добавить новый кредит.";
+infoView.name = "тут можно ввести любое название для вашего кредита.";
+infoView.bank = "название банка, у которого вы взяли в долг.";
+infoView.sum = "сколько денег вы взяли у банка.";
+infoView.interest = "% годовых, то есть процент, который вы каждый год отстёгиваете банку на хлеб с маслом (чем он меньше, тем лучше).";

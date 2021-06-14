@@ -35,12 +35,4 @@ struct CreditRow: View {
             }
         }.frame(height: 80)
     }
-    
-    private func onSave() {
-        
-    }
-    
-    private func onRemove() {
-        print("asd")
-    }
 }

@@ -26,7 +26,8 @@ struct ContentView: View {
                     Image(systemName: "gearshape")
                     Text("Настройки")
                 }
-        }.accentColor(.green)
+        }
+        .accentColor(.green)
     }
 }
 

@@ -34,7 +34,7 @@ struct FloatingTextField: View {
         let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: textField.frame.size.width, height: 44))
         let flexButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
         let doneButton = UIBarButtonItem(title: NSLocalizedString(doneTitle, comment: ""), style: .done, target: self, action: #selector(textField.doneButtonTapped(button:)))
-        doneButton.tintColor = .systemBlue
+        doneButton.tintColor = .systemGreen
         toolBar.items = [flexButton, doneButton]
         toolBar.setItems([flexButton, doneButton], animated: true)
         textField.inputAccessoryView = toolBar
@@ -55,6 +55,7 @@ struct AddView: View {
         }
     }
     
+    @State var showInfoModalView: Bool = false
     @State private var name: String = ""
     @State private var bank: String = ""
     @State private var sum: String = ""
@@ -109,16 +110,29 @@ struct AddView: View {
                         FloatingTextField.introspectTextField(textField)
                     })
             }
-            .navigationTitle("tab.add.title")
-            .toolbar(content: {
-                Button("addView.next") {
+            .listStyle(PlainListStyle())
+            .navigationTitle("addView.title")
+            .navigationBarItems(
+                leading: Button(action: {
+                    showInfoModalView.toggle()
+                }) {
+                    Image(systemName: "info.circle").scaleEffect(1.2)
+                },
+                trailing: Button("addView.next") {
                     nextButton()
                 }
-            })
+            )
+            .sheet(isPresented: $showInfoModalView) {
+                InfoView(isPresented: $showInfoModalView)
+            }
         }
     }
     
     private func nextButton() {
-        
+        let sum = Int(sum) ?? 0
+        let interest = Float(interest) ?? 0
+        let credit = Credit(name: name, bank: bank, sum: sum, interest: interest)
+        //ListView.credits.append(credit)
+        //print(ListView.credits.count)
     }
 }

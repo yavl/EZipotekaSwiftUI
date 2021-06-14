@@ -15,6 +15,7 @@
 		F54A5AEC266D10EC005FBABD /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A5AEB266D10EC005FBABD /* Globals.swift */; };
 		F54A5AEE266D14BF005FBABD /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A5AED266D14BF005FBABD /* TrashView.swift */; };
 		F54A5AF426778972005FBABD /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = F54A5AF326778972005FBABD /* Introspect */; };
+		F54A5AF62677A3C9005FBABD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A5AF52677A3C9005FBABD /* InfoView.swift */; };
 		F558D6FF2659130600BF4111 /* EZipotekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D6FE2659130600BF4111 /* EZipotekaApp.swift */; };
 		F558D7012659130600BF4111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558D7002659130600BF4111 /* ContentView.swift */; };
 		F558D7032659130800BF4111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F558D7022659130800BF4111 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		F53CFAB9265F97EF00C5629E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F54A5AEB266D10EC005FBABD /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		F54A5AED266D14BF005FBABD /* TrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashView.swift; sourceTree = "<group>"; };
+		F54A5AF52677A3C9005FBABD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		F558D6FB2659130600BF4111 /* EZipoteka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZipoteka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F558D6FE2659130600BF4111 /* EZipotekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZipotekaApp.swift; sourceTree = "<group>"; };
 		F558D7002659130600BF4111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				F5166BF2265967A7006A36B1 /* CreditView.swift */,
 				F5166BF7265970C8006A36B1 /* CreditRow.swift */,
 				F54A5AED266D14BF005FBABD /* TrashView.swift */,
+				F54A5AF52677A3C9005FBABD /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				F5166BF3265967A7006A36B1 /* CreditView.swift in Sources */,
 				F558D7012659130600BF4111 /* ContentView.swift in Sources */,
 				F558D738265923D400BF4111 /* AddView.swift in Sources */,
+				F54A5AF62677A3C9005FBABD /* InfoView.swift in Sources */,
 				F558D73A265923DF00BF4111 /* SettingsView.swift in Sources */,
 				F54A5AEE266D14BF005FBABD /* TrashView.swift in Sources */,
 				F5166BEA265931FE006A36B1 /* Credit.swift in Sources */,

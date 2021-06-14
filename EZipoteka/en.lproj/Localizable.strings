@@ -1,16 +1,24 @@
 tab.list = "List";
-tab.list.title = "List of credits";
-
 tab.add = "Add";
-tab.add.title = "Add credit";
-
 tab.settings = "Settings";
-tab.settings.title = "Settings";
 
+listView.title = "List of credits";
+listView.remove = "Remove";
+
+addView.title = "Add credit";
 addView.credit.name = "Credit name";
 addView.credit.bank = "Bank";
 addView.credit.sum = "Credit sum";
 addView.credit.interest = "Interest rate";
 addView.next = "Next";
 
+settingsView.title = "Settings";
+
 trashView.title = "Trash";
+
+infoView.title = "Info";
+infoView.description = "Add new credits here in \"Add credit\" page.";
+infoView.name = "any name to the credit";
+infoView.bank = "bank name";
+infoView.sum = "credit sum";
+infoView.interest = "annual interest rate";
