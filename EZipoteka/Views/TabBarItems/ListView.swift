@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct ListView: View {
-    @State private var credits = [
-        Credit(name: "ЖК Чистое небо - Студия", bank: "Банк Санкт-Петербург", sum: 2800000, interest: 5.85),
-        Credit(name: "ЖК Солнечный город - Студия", bank: "СберБанк", sum: 12800000, interest: 5.85)
-    ]
+    @Binding var credits: [Credit]
     
     var body: some View {
         NavigationView {

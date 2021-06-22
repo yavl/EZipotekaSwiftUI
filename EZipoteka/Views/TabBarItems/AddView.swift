@@ -55,19 +55,20 @@ struct AddView: View {
         }
     }
     
+    private let fontSize: CGFloat = 24
     @State var showInfoModalView: Bool = false
     @State private var name: String = ""
     @State private var bank: String = ""
     @State private var sum: String = ""
     @State private var interest: String = ""
+    @Binding var credits: [Credit]
     
-    private let fontSize: CGFloat = 24
-    
-    init() {
+    init(credits: Binding<[Credit]>) {
         UITableView.appearance().backgroundColor = .clear
         UITextField.appearance().clearButtonMode = .whileEditing
+        _credits = credits
     }
-
+    
     var body: some View {
         let sumBinding = Binding<String>(get: {
             sum
@@ -132,7 +133,6 @@ struct AddView: View {
         let sum = Int(sum) ?? 0
         let interest = Float(interest) ?? 0
         let credit = Credit(name: name, bank: bank, sum: sum, interest: interest)
-        //ListView.credits.append(credit)
-        //print(ListView.credits.count)
+        credits.append(credit)
     }
 }

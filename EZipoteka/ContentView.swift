@@ -9,14 +9,19 @@ import SwiftUI
 import AppTrackingTransparency
 
 struct ContentView: View {
+    @State var credits = [
+        Credit(name: "ЖК Чистое небо - Студия", bank: "Банк Санкт-Петербург", sum: 2800000, interest: 5.85),
+        Credit(name: "ЖК Солнечный город - Студия", bank: "СберБанк", sum: 12800000, interest: 5.85)
+    ]
+    
     var body: some View {
         TabView() {
-            ListView()
+            ListView(credits: $credits)
                 .tabItem {
                     Image(systemName: "rectangle.grid.1x2")
                     Text("Список")
                 }
-            AddView()
+            AddView(credits: $credits)
                 .tabItem {
                     Image(systemName: "plus.circle")
                     Text("Добавить")
