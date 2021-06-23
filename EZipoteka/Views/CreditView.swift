@@ -29,19 +29,21 @@ struct CreditView: View {
                 Text("\(credit.bank)")
                 Text("\(credit.name)")
                 Divider()
-                Text("Ежемесячный платеж: \(monthlyPayment())")
+                Text("Ежемесячный платеж: \(monthlyPayment().payment)")
+                Text("Переплата за весь срок: \(monthlyPayment().overpayment)")
             }
         }
         .padding(.top, 1)
         .navigationBarTitle(credit.name, displayMode: .automatic)
     }
     
-    private func monthlyPayment() -> String {
+    private func monthlyPayment() -> (payment: String, overpayment: String) {
         let S = Double(credit.sum)
         let r = credit.interest / 100 / 12
         let n = credit.term * 12
         let pows = Double(pow(1 + r, Double(n)))
         let payment = S * (r * pows) / (pows - 1)
-        return "\(formatter.string(from: NSNumber(value: payment))!) ₽"
+        let overpayment = payment * Double(credit.term) * 12 - S
+        return ("\(formatter.string(from: NSNumber(value: payment))!) ₽", "\(formatter.string(from: NSNumber(value: overpayment))!)")
     }
 }
