@@ -141,7 +141,7 @@ struct AddView: View {
     
     private func nextButton() {
         let sum = Int(sum) ?? 0
-        let interest = Float(interest.replacingOccurrences(of: ",", with: ".")) ?? 0
+        let interest = Double(interest.replacingOccurrences(of: ",", with: ".")) ?? 0
         let term = Int(term) ?? 0
         let credit = Credit(name: name, bank: bank, sum: sum, interest: interest, term: term)
         credits.append(credit)

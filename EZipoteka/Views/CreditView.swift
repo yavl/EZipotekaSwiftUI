@@ -23,14 +23,25 @@ struct CreditView: View {
         ScrollView {
             VStack(spacing: 20) {
                 Text("\(formatter.string(from: NSNumber(value: credit.interest))!)%")
-                    .font(.system(size: 36))
+                    .font(.system(size: 36)).foregroundColor(.green)
                 Text("\(credit.sum) ₽")
                 Text("\(credit.term) лет")
                 Text("\(credit.bank)")
                 Text("\(credit.name)")
+                Divider()
+                Text("Ежемесячный платеж: \(monthlyPayment())")
             }
         }
         .padding(.top, 1)
         .navigationBarTitle(credit.name, displayMode: .automatic)
+    }
+    
+    private func monthlyPayment() -> String {
+        let S = Double(credit.sum)
+        let r = credit.interest / 100 / 12
+        let n = credit.term * 12
+        let pows = Double(pow(1 + r, Double(n)))
+        let payment = S * (r * pows) / (pows - 1)
+        return "\(formatter.string(from: NSNumber(value: payment))!) ₽"
     }
 }

@@ -12,6 +12,6 @@ struct Credit: Identifiable, Hashable {
     var name = ""
     var bank = ""
     var sum: Int = 0
-    var interest: Float = 0
+    var interest: Double = 0
     var term: Int = 0
 }
