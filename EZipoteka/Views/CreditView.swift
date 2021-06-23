@@ -8,7 +8,28 @@
 import SwiftUI
 
 struct CreditView: View {
+    let formatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+        formatter.roundingMode = .halfUp
+        formatter.groupingSize = 3
+        return formatter
+    }()
+    
+    var credit: Credit
+    
     var body: some View {
-        Text("asd")
+        ScrollView {
+            VStack(spacing: 20) {
+                Text("\(formatter.string(from: NSNumber(value: credit.interest))!)%")
+                    .font(.system(size: 36))
+                Text("\(credit.sum) ₽")
+                Text("\(credit.name)")
+                Text("\(credit.bank)")
+            }
+        }
+        .padding(.top, 1)
+        .navigationBarTitle(credit.name, displayMode: .automatic)
     }
 }

@@ -15,14 +15,9 @@ struct ListView: View {
             List {
                 ForEach(credits, id: \.self) { credit in
                     CreditRow(credit: credit)
-                        .contextMenu(ContextMenu(menuItems: {
-                            /*@START_MENU_TOKEN@*/Text("Menu Item 1")/*@END_MENU_TOKEN@*/
-                            /*@START_MENU_TOKEN@*/Text("Menu Item 2")/*@END_MENU_TOKEN@*/
-                            /*@START_MENU_TOKEN@*/Text("Menu Item 3")/*@END_MENU_TOKEN@*/
-                        }))
                 }
                 .onDelete(perform: { indexSet in
-                    onRemove(at: indexSet)
+                    credits.remove(atOffsets: indexSet)
                 })
                 if credits.isEmpty {
                     Text("empty")
@@ -36,13 +31,5 @@ struct ListView: View {
             }
         }
         .navigationViewStyle(StackNavigationViewStyle()) // a workaround for swipe back cancel issue
-    }
-    
-    private func onSave() {
-        
-    }
-    
-    private func onRemove(at offsets: IndexSet) {
-        credits.remove(atOffsets: offsets)
     }
 }

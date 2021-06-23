@@ -21,11 +21,11 @@ struct CreditRow: View {
     
     var body: some View {
         
-        NavigationLink(destination: CreditView()) {
+        NavigationLink(destination: CreditView(credit: credit)) {
             HStack {
                 VStack {
                     Text("\(formatter.string(from: NSNumber(value: credit.interest))!)%").foregroundColor(.green).font(.system(size: 26))
-                    Text("\(credit.sum)₽").foregroundColor(.gray).font(.system(size: 12))
+                    Text("\(credit.sum) ₽").foregroundColor(.gray).font(.system(size: 12))
                 }
                 
                 VStack(alignment: .leading) {
