@@ -10,6 +10,7 @@ addView.credit.name = "Credit name";
 addView.credit.bank = "Bank";
 addView.credit.sum = "Credit sum";
 addView.credit.interest = "Interest rate";
+addView.credit.term = "Term (in years)";
 addView.next = "Next";
 
 settingsView.title = "Settings";

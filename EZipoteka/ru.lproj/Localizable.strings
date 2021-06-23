@@ -10,6 +10,7 @@ addView.credit.name = "Название кредита";
 addView.credit.bank = "Банк";
 addView.credit.sum = "Сумма кредита";
 addView.credit.interest = "Процентная ставка";
+addView.credit.term = "Срок (лет)";
 addView.next = "Далее";
 
 settingsView.title = "Настройки";

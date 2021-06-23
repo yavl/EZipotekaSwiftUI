@@ -26,6 +26,7 @@ struct CreditRow: View {
                 VStack {
                     Text("\(formatter.string(from: NSNumber(value: credit.interest))!)%").foregroundColor(.green).font(.system(size: 26))
                     Text("\(credit.sum) ₽").foregroundColor(.gray).font(.system(size: 12))
+                    Text("\(credit.term) лет").foregroundColor(.gray).font(.system(size: 12))
                 }
                 
                 VStack(alignment: .leading) {

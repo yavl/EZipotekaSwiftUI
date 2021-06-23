@@ -25,8 +25,9 @@ struct CreditView: View {
                 Text("\(formatter.string(from: NSNumber(value: credit.interest))!)%")
                     .font(.system(size: 36))
                 Text("\(credit.sum) ₽")
-                Text("\(credit.name)")
+                Text("\(credit.term) лет")
                 Text("\(credit.bank)")
+                Text("\(credit.name)")
             }
         }
         .padding(.top, 1)

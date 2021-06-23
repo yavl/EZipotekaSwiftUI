@@ -61,6 +61,7 @@ struct AddView: View {
     @State private var bank: String = ""
     @State private var sum: String = ""
     @State private var interest: String = ""
+    @State private var term: String = ""
     @Binding var credits: [Credit]
     
     init(credits: Binding<[Credit]>) {
@@ -110,6 +111,15 @@ struct AddView: View {
                     .introspectTextField(customize: { textField in
                         FloatingTextField.introspectTextField(textField)
                     })
+                FloatingTextField("addView.credit.term", text: $term)
+                    .textFieldStyle(MyTextFieldStyle())
+                    .keyboardType(.decimalPad)
+                    .font(Font.system(size: fontSize, design: .default))
+                    .foregroundColor(.primary)
+                    .introspectTextField(customize: { textField in
+                        FloatingTextField.introspectTextField(textField)
+                    })
+                
             }
             .listStyle(PlainListStyle())
             .navigationTitle("addView.title")
@@ -132,7 +142,8 @@ struct AddView: View {
     private func nextButton() {
         let sum = Int(sum) ?? 0
         let interest = Float(interest.replacingOccurrences(of: ",", with: ".")) ?? 0
-        let credit = Credit(name: name, bank: bank, sum: sum, interest: interest)
+        let term = Int(term) ?? 0
+        let credit = Credit(name: name, bank: bank, sum: sum, interest: interest, term: term)
         credits.append(credit)
     }
 }
