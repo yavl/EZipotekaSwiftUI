@@ -11,6 +11,8 @@ import Firebase
 
 @main
 struct EZipotekaApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     init() {
         requestATT()
         FirebaseApp.configure()
